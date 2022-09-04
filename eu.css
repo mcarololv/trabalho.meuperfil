@@ -20,6 +20,7 @@
 
 body {
   background-color: rgb(204, 126, 187);
+  margin: 0;
 }
 
 .intro-pag-titulo {
@@ -30,14 +31,14 @@ body {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
+  display: block;
+  margin-top: 10vh;
   text-align: center;
-  color: #d3b7;
+  color: rgba(146, 0, 117, 0.467);
+  text-align: center;
+  font-weight: 900;
   background: #d3b7f8;
   font-family: "Josefin Sans", sans-serif;
-  font-family: "Secular One", sans-serif;
-  font-family: "Source Code Pro", monospace;
   font-size: 12.5px;
   width: 100%;
   height: 50px;
@@ -57,6 +58,7 @@ footer {
   border-radius: 50%;
   margin-bottom: 15px;
 }
+
 .botao {
   display: block;
   margin: 2vh auto;
@@ -70,4 +72,31 @@ footer {
   padding: 10px;
   cursor: pointer;
   border: none;
+}
+
+.trabalhos {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+.trabalhos-container h1 {
+  color: purple;
+  font-size: 7vh;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.trabalho {
+  display: inline-block;
+  margin: 1vh;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 2vh;
+  border: 1px solid purple;
 }
